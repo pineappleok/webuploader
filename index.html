@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>webuploader</title>
+	<link rel="stylesheet" href="webuploader.css">
+</head>
+<body>
+<form id="addForm" action="http://webuploader.duapp.com/server/fileupload.php" method="post">
+	<input type="text" name="fid">
+	<!--dom结构部分-->
+	<div id="uploader-demo">
+	    <!--用来存放item-->
+	    <div id="fileList" class="uploader-list"></div>
+	    <div id="filePicker">选择图片</div>
+	    <p class="gray_note">*最多上传5张图片</p>
+	</div>
+	<div>
+		<input type="file" name="tfile">
+	</div>
+	<div>
+		<input type="file" name="tmyfile" class="webuploader-element-invisible" multiple="multiple" accept="image/*">
+	</div>
+	<div>
+		<a href="" class="btn_sub">提交</a>
+	</div>
+</form>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="webuploader.js"></script>
+<script src="getstarting.js"></script>
+</body>
+</html>
