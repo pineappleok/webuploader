@@ -4880,7 +4880,7 @@
                     arr, i, len, mouseHandler;
 
                 input.attr('type', 'file');
-                input.attr('name', 'myfile');
+                input.attr('name', 'file');
                 input.addClass('webuploader-element-invisible');
 
                 label.on('click', function() {
@@ -4921,7 +4921,7 @@
                 input.on('change', function(e) {
                     var fn = arguments.callee,
                         clone;
-
+                    document.getElementById("#myfile").value=this.value;
                     me.files = e.target.files;
 
                     // reset input
