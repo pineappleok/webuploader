@@ -117,6 +117,7 @@ jQuery(function() {
     /*下面用表单提交*/
     $(".btn_sub").click(function(e) {
         e.preventDefault();
+        var form = $("#addForm");
         form.submit();
     });
 });
